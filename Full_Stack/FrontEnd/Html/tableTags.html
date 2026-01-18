@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table data</title>
+</head>
+<body>
+    <table border="3" align="center" bgcolor="skyblue" cellspacing="1" cellpadding="10">
+        <thead>
+            <tr bgcolor="orange">
+                <th>COURSE</th>
+                <th width="100px">FEES</th>
+                <!-- colspan use to merge columns in table-->
+                <th colspan="2" width="200px">DURATION</th>
+            </tr>
+        </thead>
+        <tbody align="center" bgcolor="pink">
+            <tr>
+                <td width="150px">Web development</td>
+                <td> 15,000</td>
+                <td> 3 months</td>
+                <td> 6 months</td>
+            </tr>
+            <tr>
+                <!-- rowspan use to merge rows in table -->
+                <td width="150px" rowspan="2">App development</td>
+                <td>20,000</td>
+                <td>4 months</td>
+                <td>8 months</td>
+            </tr>
+            <tr>
+                <td>40,000</td>
+                <td>12 months</td>
+                <td>12 + 6 months</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
