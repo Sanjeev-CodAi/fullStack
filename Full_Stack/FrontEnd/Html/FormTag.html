@@ -10,7 +10,26 @@
     <form>
         <fieldset>
             <legend><h2>Enquiry Form</h2></legend>
-        Name : <input type="textbox" placeholder="Enter your Name here"/>
+        Name : 
+        <input type="textbox" placeholder="Enter Name" required/>
+        <br>
+        <br>
+        Age :
+        <input type="number" min="1" max="100" name="age"/>
+        Color:
+        <input type="color"/> 
+        D.O.B. :
+        <input type="datetime-local"/>
+        <br>
+        <br>
+        E-mail Id:
+        <input type="email" name="Email"/>
+        <br>
+        <br>
+        Password :
+        <input type="password" name="pass"/>
+        Confirm Password :
+        <input type="textbox" name="pass"/>
         <br>
         <br>
         Address : <textarea></textarea>
@@ -26,14 +45,14 @@
         <select>
             <option>Select Your Country</option>
             <optgroup label="Asia">
-                <option>India</option>
-                <option>Pakistan</option>
-                <option>Nepal</option>
+                <option name="india">India</option>
+                <option name="Pakistan">Pakistan</option>
+                <option name="Nepal">Nepal</option>
             </optgroup>
-            <option>Russia</option>
-            <option>USA</option>
-            <option>UK</option>
-            <option>Japan</option>
+            <option name="Russia">Russia</option>
+            <option name="USA">USA</option>
+            <option name="UK">UK</option>
+            <option name="Japan">Japan</option>
         </select>
         <br>
         <br>
@@ -44,12 +63,34 @@
         <br>
         <br>
         Upload File :
-        <input type="file"/>
+        <input type="file" name="document"/>
         <br>
         <br>
+        Hidden : <!-- hidden tags are not visible to the user it is for the server to get hidden info-->
+        <input type="hidden" name="secret"/><br><br>
         <input type="submit" value="Send"/>
         <input type="reset" value="Reset"/>
         </fieldset>
+    </form><br>
+
+    <form>
+        <fieldset>
+            <legend><h2>Calender</h2></legend>
+            Date :
+            <input type="date" name="date"/>
+            Time :
+            <input type="time" name="time"/>
+            Month :
+            <input type="month" name="time"/>
+            Week :
+            <input type="week" name="week"/>
+            <br><br>
+            Range :
+            <input type="range" value="69" name="range" />
+            <br><br>
+        <input type="submit" value="Send"/>
+        <input type="reset" value="Reset"/>
+    </fieldset>
     </form>
 </body>
 </html>
