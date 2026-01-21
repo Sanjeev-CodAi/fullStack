@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form using Table</title>
+</head>
+<body>
+    <form>
+    <table border="0" cellpadding="5" cellspacing="5" bgcolor="#E5E5E5">
+            <thead >
+                <tr>
+                    <th colspan="3" bgcolor="#F54927"><font color="white"><h2>Application Information</h2></font></th>
+                </tr>
+            </thead>
+            <tbody bgcolor="F59527">
+                <tr >
+                    <td >
+                        ID No :
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                    </td>
+                    <td>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                    </td>
+                    <td>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                        <input type="number" name="number[]" min="0" max="9"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Date Of Birth : &nbsp;
+                        <input type="date"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Surname : &nbsp;
+                        <input type="textarea" name="surname" minlength="2" maxlength="15" autofocus=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        First Name : &nbsp;
+                        <input type="textarea" name="firstName" minlength="2" maxlength="15" autofocus="" required=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Place of Birth :
+                        <select>
+                        <optgroup label="India">
+                            <option>Select Option</option>
+                            <option>Delhi</option>
+                            <option>Gurugaon</option>
+                            <option>Pune</option>
+                        <optgroup label="Russia">
+                            <option>Buryatia</option>
+                            <option>Mordovia</option>
+                            <option>Kalmykia</option>
+                        <optgroup label="China">
+                            <option>Beijing</option>
+                            <option>Fujian</option>
+                            <option>Chongqing</option>
+                        <optgroup label="America">
+                            <option>Texas</option>
+                            <option>Alaska</option>
+                            <option>California</option>
+                        </optgroup>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Country of Birth :
+                        <select>
+                            <option>Select option</option>
+                            <option>India</option>
+                            <option>Russia</option>
+                            <option>China</option>
+                            <option>America</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Marital Status :
+                        <input type="radio" name="maritalStatus"/>
+                        Never Married 
+                        <input type="radio" name="maritalStatus"/>
+                        Married 
+                        <input type="radio" name="maritalStatus"/>
+                        Widowed 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Phone :
+                        <input type="number" name="number" placeholder="phone number" min="1111111111" max="9999999999" required=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Email :
+                        <input type="email" name="email" placeholder="email id" required=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Address :
+                        <textarea></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+            <input type="submit" value="Send"/> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset"/>
+        
+</form>
+    
+</body>
+</html>
