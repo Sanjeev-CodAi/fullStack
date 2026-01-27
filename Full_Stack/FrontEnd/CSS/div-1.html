@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div practice no.1</title>
+<style>
+    #main{
+        width: 300px;
+        height: 200px;
+        background-color:black;
+}
+    .row-1{
+        width:300;
+        height: 100px;
+        background-color: aqua;
+    }
+    .row-2{
+        width:300;
+        height: 100px;
+        background-color: aqua;
+    }
+
+    .col-1{
+        width:150px;
+        height: 100px;
+        background-color: greenyellow;
+        float: left;
+    }
+    .col-2{
+        width:150px;
+        height: 100px;
+        background-color:greenyellow;
+        float: left;
+    }
+    .sub-col-1{
+        width:150px;
+        height:50px;
+        background-color: aliceblue;
+    }
+    .sub-col-2{
+        width:150px;
+        height:50px;
+        background-color:pink;
+    }
+</style>
+</head>
+<body>
+    <div id="main">
+
+        <div class="row-1">
+            <div class="col-1">hello</div>
+            <div class="col-2">
+                <div class="sub-col-1">About</div>
+                <div class="sub-col-2">Course</div>
+            </div>
+        </div>
+
+        <div class="row-2">
+            <div class="col-1">
+                <div class="sub-col-1">Contact-Us</div>
+                <div class="sub-col-2">Gallery</div>
+            </div>
+            <div class="col-2">Enquiry</div>
+        </div>
+    </div>
+    
+</body>
+</html>
