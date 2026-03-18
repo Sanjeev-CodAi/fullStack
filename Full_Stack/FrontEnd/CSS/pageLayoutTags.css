@@ -16,21 +16,29 @@
             background-color: white;
             text-align: center;
         }
-        .nav11{
+        .navHome{
             float: left;
             font-weight:bolder;
-            color: brown;
-            margin-top:1%;
+            color: black;
+            font-size: 30px;
+            background-color: whitesmoke;
             width:50%;
-            height:10px;
+            height:100%;
         }
-        .nav12{
+        .navHome:hover, .navAboutus:hover{
+            background-color: red;
+            color: white;
+        }
+        .navAboutus{
             float: left;
             font-weight: bolder;
-            color: brown;
-            margin-top: 1%;
+            color: black;
+            font-size: 30px;
+            background-color: whitesmoke;
+            border: 3px;
+            border-color: black;
             width: 50%;
-            height: 10px;
+            height: 100%;
         }
         .main{
             width: 100%;
