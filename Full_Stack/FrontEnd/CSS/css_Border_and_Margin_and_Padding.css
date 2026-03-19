@@ -14,20 +14,23 @@ border : size (solid | dash | dotted ) color|color code
                 2. border pixels ka space occupied krta hai]
     eg. 
     */
-    border : 6px solid green;    
+    border : 6px solid green;   
+    margin : auto; /* margin : auto ; isse element center me aa jata hai but iske liye width define hona must hai */
 }
 /*border pixels size occupied ka example*/
 #row1{
-    border : 5px solid red;    
+    border : 5px dotted red;    
     /* width : 500px; */
     /* height : 200px; */
     /*^ yaha border pixel size le rha hai and border out of box ja rha hai
     isko thik krne ke liye border ki size ka 2time (-) minus krke width and height set krni hogi*/
     width : 480px; /*<-- border overlap check krne ke liye ise comment kro*/
-    height : 170px; /* <--border overlap check krne ke liye ise comment kro*/
-    margin : 5px; /* same jese border me calculate krke height and width set krte hai same margin ke sath bhi 
-    esa krna hota hai eg. ( margin : 5px; width,height : 490px,190px[Before] | width,height : 480px,180px;[After]) */
-    margin-top : 15px; /* hum margin ko needs ke according kisi bhi side se lga skte hai*/
-    margin : 15px 5px 5px 5px; /* This is short hand margin isme clock wise margin set hota hai. for eg. [top right bottom left] */
-    
+    height : 100px; /* <--border overlap check krne ke liye ise comment kro*/
+    /* margin : 5px; /* margin set krte wkt calculate krke height|width set krna important hai taki overlap na ho. eg. (width,height : 490px,190px [Before]  margin : 5px;  | (5px*2 - 490px,190px)| width,height : 480px,180px;[After]) */ 
+    /* margin-top : 15px; /* hum margin ko needs ke according kisi bhi side se lga skte hai */
+    margin : 15px 5px 15px 5px; /* This is Short-Hand Margin isme clock wise margin set hota hai. for eg. [top right bottom left] */
+    /* padding bhi proper set krne ke liye hume calculation krke height/width set krni hoti hai */
+    /* padding : 10px; */ /* padding set krte wkt calculate krke height|width set krna important hai taki overlap na ho */
+    /* padding-top : 30px; /* hum padding ko needs ke according kisi bhi side se lga skte hai */
+    padding : 30px 0px 30px 0px; /* This is Short-Hand Padding isme clock wise padding set hota hai. for eg. [top right bottom left] */
 }
