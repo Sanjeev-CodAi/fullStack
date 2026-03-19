@@ -1,0 +1,33 @@
+#main1{
+    width: 500px;
+    height: 200px;
+    background-color: blueviolet;
+    font-size: 40px;
+    color : white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+/* Border ka syntax :
+border : size (solid | dash | dotted ) color|color code
+            [ point to be not : 
+                1. border lgane se phele width and height set kro 
+                2. border pixels ka space occupied krta hai]
+    eg. 
+    */
+    border : 6px solid green;    
+}
+/*border pixels size occupied ka example*/
+#row1{
+    border : 5px solid red;    
+    /* width : 500px; */
+    /* height : 200px; */
+    /*^ yaha border pixel size le rha hai and border out of box ja rha hai
+    isko thik krne ke liye border ki size ka 2time (-) minus krke width and height set krni hogi*/
+    width : 480px; /*<-- border overlap check krne ke liye ise comment kro*/
+    height : 170px; /* <--border overlap check krne ke liye ise comment kro*/
+    margin : 5px; /* same jese border me calculate krke height and width set krte hai same margin ke sath bhi 
+    esa krna hota hai eg. ( margin : 5px; width,height : 490px,190px[Before] | width,height : 480px,180px;[After]) */
+    margin-top : 15px; /* hum margin ko needs ke according kisi bhi side se lga skte hai*/
+    margin : 15px 5px 5px 5px; /* This is short hand margin isme clock wise margin set hota hai. for eg. [top right bottom left] */
+    
+}
