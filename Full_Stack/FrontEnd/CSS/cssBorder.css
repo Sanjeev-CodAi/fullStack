@@ -1,0 +1,28 @@
+#main1{
+    width: 500px;
+    height: 200px;
+    background-color: blueviolet;
+    font-size: 40px;
+    color : white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+/* Border ka syntax [ point to be not : 
+                        1. border lgane se phele width and height set kro 
+                        2. border pixels ka size occupied krta hai]
+    border : size ( solid | dash | dotted ) color|color code
+    eg. 
+    */
+    border : 6px solid green;    
+}
+/*border pixels size occupied ka example*/
+#row1{
+    border : 6px dotted red;    
+    width : 500px;
+    height : 200px;
+    /*^ yaha border pixel size le rha hai and border out of box ja rha hai
+    isko thik krne ke liye border ki size ka 2time (-) minus krke width and height set krni hogi*/
+    width : 488px; /*<-- border over check krne ke liye ise comment kro*/
+    height : 188px; /* <--border over check krne ke liye ise comment kro*/
+
+}
