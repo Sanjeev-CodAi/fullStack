@@ -1,0 +1,19 @@
+.main1{
+    width : 500px;
+    height : 250px;
+    border : 1px solid black;
+    font-size : 25px; 
+    /*
+    r = 0 - 255 (red)
+    g = 0 - 255 (green)
+    b = 0 - 255 (blue)
+    */
+    color : rgb(255,255,255);
+    margin : auto;
+    text-align : center;
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* we can easily choose color according to us using " rga() " and to change color opacity use " rgba() " opacity start from 0 to 1 eg. [0, 0.1, 0.2, 0.3, 0.4, ... , 1] and syntax is [ rgba( 255[red] , 255[green] , 255[blue] , 0.5[opacity] ); */
+    background-color : rgb(255, 100, 200);
+    /* background-color : rgba(255, 100, 200,0.8); */
+
+}

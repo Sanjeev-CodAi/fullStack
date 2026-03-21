@@ -3,18 +3,20 @@
     height : 900px;
     font-size: 15px;
     font-weight:bold;
+    margin:auto;
     color : rgb(21, 255, 0);
     font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border : 2px solid black;
     background-image : url('pic_03.jpg'); /* ye background me image set krta hai */
     /* background ki image ki size ko set krne ke lie and [background-size:cover] assign div ko poora cover krta hai background me */ 
     background-size : 300px 200px; 
-    /* background-size: cover; */
+    background-size: cover;
     /* by-default background image repeat hoti hai usko prevent krne ke liye iska use krtre hai and if hume repeat apne according direction wise chahiye to [ repeat-x(to the right) & repeat-y(to the down) ] kr skte hai */
     background-repeat: no-repeat; 
     /* background-repeat: repeat-x; */
     /* background-repeat: repeat-y; */
     /* background-repeat: repeat; */
-    background-position: top center; /* is property se bg. image ko position de skte hai eg. [center , center left , center right, top , top left, top right, bottom , bottom left , bottom right]*/
-    background : url('pic_04.jpg') no-repeat bottom left;   
+    background-position:center; /* is property se bg. image ko position de skte hai eg. [center , center left , center right, top , top left, top right, bottom , bottom left , bottom right]*/
+    /* background : url('pic_04.jpg') no-repeat bottom left;    */
+    background-attachment: fixed;
 }
