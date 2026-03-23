@@ -1,6 +1,7 @@
 .main1{
     width : 500px;
     height : 250px;
+    border-radius : 5px;
     border : 1px solid black;
     font-size : 25px; 
     /*
@@ -15,5 +16,25 @@
     /* we can easily choose color according to us using " rga() " and to change color opacity use " rgba() " opacity start from 0 to 1 eg. [0, 0.1, 0.2, 0.3, 0.4, ... , 1] and syntax is [ rgba( 255[red] , 255[green] , 255[blue] , 0.5[opacity] ); */
     background-color : rgb(255, 100, 200);
     /* background-color : rgba(255, 100, 200,0.8); */
+
+    /* box shadow use to set shadow in the back of box
+    syntax = box-shadow : x-axis y-axis (axis can be negative or postive) | blur | range | color ;
+    eg.  */
+    box-shadow : 5px 5px 20px 10px rgb(255, 138, 22);
+
+    /* text shadow use to set shadow in the back of text
+    syntax = text-shadow : x-axis y-axis blur color ; , 
+    point no.1 : text shadow me range nhi hota, box shadow ki tarah.
+    eg. */
+    text-shadow : 3px 3px 10px black;
+}
+
+.main1:hover{
+    width : 505px;
+    height : 255px;
+    font-size : 26px;
+    border-radius : 10px;
+    box-shadow : 5px 5px 15px 5px grey;
+    text-shadow : 0px 0px 15px red;
 
 }
