@@ -1,0 +1,20 @@
+/* IMPORTANT POINTS : 
+    1. transform function koi pixel space nhi leta margin ki tarah.
+    2. transform function ka use object ko move, rotate, shape dene me krte hain.
+    3. transform function ko ek baar hi use kr skte hai ek class me.
+    4. if ek class me two transform function likhe to first wala automatic avoid ho jayega
+    */
+.trans1{
+    width : 500px;
+    height : 500px;
+    background-color : rgb(109, 255, 65);
+    /* syntax : 
+        transform : translate(x,y); 
+      [ translate use to move position of object. ] */
+    transform : translate(40px, 40px); /* SHORT-HAND FUNCTION */
+
+    /* translateX(x); ye only X-axis pr object move krega */
+    /* transform : translateX(20px);  */
+    /* translateY(y); ye only Y-axis pr object move krega */
+    /* transform : translateY(20px);  */
+}
