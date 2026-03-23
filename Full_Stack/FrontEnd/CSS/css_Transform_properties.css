@@ -7,8 +7,12 @@
 .trans1{
     width : 500px;
     height : 500px;
+    margin : auto;
+    margin-top : 50px;
     background-color : rgb(109, 255, 65);
-    /* syntax : 
+    /*
+    TRANSFORM function's element :-
+No.1    syntax : 
         transform : translate(x,y); 
       [ translate use to move position of object. ] */
     transform : translate(40px, 40px); /* SHORT-HAND FUNCTION */
@@ -17,4 +21,13 @@
     /* transform : translateX(20px);  */
     /* translateY(y); ye only Y-axis pr object move krega */
     /* transform : translateY(20px);  */
+    /*
+    
+No.2    syntax :
+        transform : skew(x [ deg | rad | turn ] ,y [ deg | rad | turn ]) ;   
+        transform : skewX(x [ deg | rad | turn ]) ;
+        transform : skewY(x [ deg | rad | turn ]) ;
+    */
+    /* skew element ko tilt krta hai x and y axis pr */
+    transform : skew(20deg);
 }
