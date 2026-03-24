@@ -1,33 +1,56 @@
 /* IMPORTANT POINTS : 
     1. transform function koi pixel space nhi leta margin ki tarah.
-    2. transform function ka use object ko move, rotate, shape dene me krte hain.
+    2. transform function ka use element ko move, rotate, shape dene me krte hain.
     3. transform function ko ek baar hi use kr skte hai ek class me.
     4. if ek class me two transform function likhe to first wala automatic avoid ho jayega
+    5. [ deg = degree , rad = radians ]
     */
 .trans1{
-    width : 500px;
-    height : 500px;
+    width : 350px;
+    height : 350px;
     margin : auto;
-    margin-top : 50px;
+    margin-top : 100px;
     background-color : rgb(109, 255, 65);
+    box-shadow : 5px 5px 10px 2px rgb(253, 88, 242);
     /*
     TRANSFORM function's element :-
-No.1    syntax : 
-        transform : translate(x,y); 
-      [ translate use to move position of object. ] */
-    transform : translate(40px, 40px); /* SHORT-HAND FUNCTION */
-
-    /* translateX(x); ye only X-axis pr object move krega */
-    /* transform : translateX(20px);  */
-    /* translateY(y); ye only Y-axis pr object move krega */
-    /* transform : translateY(20px);  */
-    /*
+No.1  translate()  syntax :  transform : translate(x,y);  */
+        /*[ translate use to move position of element. ] */
+        /* translateX(x); ye only X-axis pr element move krega */
+    transform : translateX(20px); 
+        /* translateY(y); ye only Y-axis pr element move krega */
+    transform : translateY(20px); 
     
-No.2    syntax :
-        transform : skew(x [ deg | rad | turn ] ,y [ deg | rad | turn ]) ;   
-        transform : skewX(x [ deg | rad | turn ]) ;
-        transform : skewY(x [ deg | rad | turn ]) ;
+    transform : translate(40px, 40px); /* SHORT-HAND FUNCTION */
+    /*    
+No.2  skew()  syntax :  transform : skew(x [ deg | rad | turn ] ,y [ deg | rad | turn ]);   
+        
+        transform : skewX(X [ deg | rad | turn ]) ;
+        transform : skewY(Y [ deg | rad | turn ]) ;
     */
     /* skew element ko tilt krta hai x and y axis pr */
-    transform : skew(20deg);
+    transform : skew(20deg,5deg);
+    /* 
+No.3  rotate() syntax: transform : rotate(deg|rad); 
+    rotate(deg|rad);
+    rotateX(); X-axis pr rotate
+    rotateY(); Y-axis pr rotate
+    rotateZ(); Z-axis pr rotate
+*/
+    /* Rotate property me by-defualt rotation Z-axis(clockwise) pr hoti hai*/
+    transform : rotateZ(70deg);
+    /*
+No.4  scale() syntax : transform : scale(1 - infinite); [ scale() element ke size{width,height} ko multiply krke bda krta hai.
+example. width:100px; height:100px; [before]
+    scale(1.5);
+    width:100px * 1.5 = 150px; height: 100px *1.5 = 150px; [after]
+    scale(X,Y);
+    scaleX(); ye width ko effect karga
+    scaleY(); ye height ko effect karega
+ */
+/* Important Point : 
+    scale() me nagative value dene pr ye element ko reverse krke size badayega  */
+    transform : scaleX(1.5);
+
+
 }
