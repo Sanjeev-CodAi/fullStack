@@ -1,0 +1,42 @@
+/* IMPORTANT POINT : 
+    [ ' Document flow ' -> Jab hum HTML likhte ho, browser elements ko top se bottom aur left se right arrange karta hai (depending on writing mode).
+        Har element apna space reserve karta hai, aur baaki elements uske hisaab se adjust hote hain.
+        Ye hi arrangement 'document flow' kehlata hai. ]
+    Position : absolute; absolute document flow se nikal jata hai and apni original space ko chhod deta hai and dusra element uska place le leta hai
+    Position : relative; ye apni original space ki jagah ko nhi chodta but us place se element position change kr skta hai.
+    position ko move krne ke liye [ top: 0px; , bottom: 0px; , left: 0px; and right: 0px; ] ka use hota hai.
+    */
+
+.container-1{
+    width : 150px;
+    height : 150px;
+    border : 2px solid black;
+    font-size : 20px;
+    text-align : center;
+    background-color: brown;
+    float : left;
+    
+}
+.container-2{
+    width : 150px;
+    height : 150px;
+    border : 2px solid black;
+    font-size : 20px;
+    text-align : center;
+    background-color : greenyellow;
+    float : left;
+    /* absolute me element body ko apna parent manta hai and uske according position property kaam krti hai */
+    position : absolute;
+    top : 160px;
+}
+.container-3{
+    width : 150px;
+    height : 150px;
+    border : 2px solid black;
+    font-size : 20px;
+    text-align : center;
+    background-color : chocolate;
+    float : left;
+    position : relative;
+    right : 1px;
+}   
