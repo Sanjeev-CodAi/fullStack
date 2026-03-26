@@ -1,0 +1,41 @@
+/*  1. Column property basically column define krti hai taki user ki readability increase ho sake.
+    2. column ki kuch property: value; with syntax :-
+        column-count : 2; 
+        column-gap : 10px;
+        column-fill : balance;
+        column-fill : auto;  
+        column-rule : 0px [solid | dotted | dashed | double] color; 
+        column-width : 100px;
+        column-span : all;
+        column-span : none;
+          */
+        
+.column-1{
+    height : 150px;
+    background-color : antiquewhite;
+    /* column-count batata hai ki layout me kitne columns banane hain. Ye number fixed hota hai, browser content ke hisaab se isse badhata nahi, sirf width adjust karta hai. */
+    column-count : 5; /* isme fix no. of column banenge fir chahe width kitni bhi ho */
+    /* 'column-gap' ye 2 or jyada columns ke bich me space ko define krta hai ki kitna space hoga har column ke bich me. */
+    column-gap : 10px; 
+    /* 'column-fill' ye height ke according content ko fill krta hai taki content uneven na dikhe.  */
+    column-fill : balance; 
+    /* ye phele column ko top to bottom, left to right pura fill krta hai and if content bahar jata hai to next column me fill krta hai, isse content uneven dikhta hai */
+    /* column-fill : auto;  */
+    /* 'column-rule' column ke bich me ek vertical line add krta hai, jese newspaper ki description me hoti hai */
+    column-rule : 3px solid red;
+    /* 'column-width' column ki minimum width define karta hai and Agar sath me 'column-count' bhi diya ho to wo uska upper limit ban jata hai */
+    column-width : px; /* isme Browser decide karega kitne columns banane hain according to the content. */
+}
+.heading{
+    /* Jab hum text ko multiple columns me divide karte hai, normally har element ek column ke andar hota hai. 
+    'column-span: all;' lagane se wo element sabhi columns ko cross karke full width le leta hai.*/
+    column-span : all; /* [Ye mostly headings ya big images ke liye use hota hai jo columns me split nahi hone chahiye.] */
+}
+/* 'column-span : none; ' best example :- 
+        | Heading    | Heading    | Heading    | ❌ (split)
+        | Col 1 text | Col 2 text | Col 3 text |
+*/
+/* 'column-span : all; ' best example :- 
+        |          Heading (full width)          | 
+        |  Col 1 text | Col 2 text | Col 3 text  |
+*/
