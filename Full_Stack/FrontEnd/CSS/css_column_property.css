@@ -24,7 +24,7 @@
     /* 'column-rule' column ke bich me ek vertical line add krta hai, jese newspaper ki description me hoti hai */
     column-rule : 3px solid red;
     /* 'column-width' column ki minimum width define karta hai and Agar sath me 'column-count' bhi diya ho to wo uska upper limit ban jata hai */
-    column-width : px; /* isme Browser decide karega kitne columns banane hain according to the content. */
+    column-width : 200px; /* isme Browser decide karega kitne columns banane hain according to the content. */
 }
 .heading{
     /* Jab hum text ko multiple columns me divide karte hai, normally har element ek column ke andar hota hai. 
