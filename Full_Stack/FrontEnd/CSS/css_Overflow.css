@@ -4,7 +4,7 @@ body{
 
 .para1{
     width : 500px;
-    height : 500px;
+    height : 300px;
     border : 4px solid black;
     margin : auto;
     
@@ -16,4 +16,23 @@ body{
     [ overflow-y : hidden | scroll; ] - isse hum extra data ko hide ya scroll kr skte hai Y-axis pr
       */
     overflow-y : scroll;
+}
+.container{
+    width : 400px;
+    height : 200px;
+    margin-top : 20px;
+    border : 2px solid black;
+    font-size : 34px;
+    overflow : hidden;
+    /* resize property hume ek feature provide krti hai jisse hum extra content ke container ka size kheech ke bada kr skte hai taki content dikh jaye.
+    resize ko hum set kr skte hai ki ye vertical drag ho ya horizontal ya fir both side.
+    isko none bhi kr skte hai. syntax:-
+    resize : both;
+    resize : vertical;
+    resize : horizontal;
+    resize : none;
+    */
+    resize : both;
+    /* text-indent se content ke starting ke first line me space aa jati hai jisse content khubsurat lge. */
+    text-indent : 50px;
 }
