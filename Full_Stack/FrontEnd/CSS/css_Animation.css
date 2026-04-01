@@ -1,0 +1,90 @@
+/* 1. Animation se hum kisi bhi element ko move kra skte hai, isme basically multiple css properties element pr lgayi jati hai jisse wo move krta hua dikhta hai. 
+
+Animation property syntax:- 
+        * @keyframes [animation-name]{ "keyframes ke scope ke andar timing ko percentage me divide krte hai taki specific time pr specific CSS property use ho. keyframes ke ander hum requirment ke according time frames use kr skte hai. "
+            0%{  "idhar css property ayengi jo element ke 0%[starting/time] me lgegi " }
+            50%{ "idhar bhi CSS property aayengi jo time ke 50% hone pr lgegi " }
+            100%{ "idhar bhi CSS property aayegi ho time ke 100% hone pr lgegi " }
+            }
+        * Animation-name : 'xyz'; [ animation-name-assign]; isko jis element ko move krana hai uske css me likha jata hai, and isme element ko ek name assign krte hai jispr animation honi hai. ]
+        * Animation-duration : '1s'; [ idhar animation ka time aayega jitni der hume animation show krni hai. ]
+        * Animation-delay : '2s'; [ idhar animation ka delay time jo btayega ki kitni der baad animation show ho. ]
+        * Animation-iteration-count : '2'; [ iska mtlb ki animation kitni baar show hogi. isme 'count' ya 'infinite' bhi likh skte hai. ]
+        * Animation-direction : 'reverse/alternate/alternate-reverse/normal';
+            [ reverse :- element ka start reverse(100%-0%) sequence me hoga. ]
+            [ alternate :- element start normal(0%) rahega but end(100%) me ye reverse hoke return aayega, isko show krane ke liye iteration-count : 2 ya usse jyada rakhna jaruri hai; ]
+            [ alternate-reverse :- element start last(100%) position se krega then alternate ki property behave kregi. ]
+            [ normal (by-default) :- element normal(0%-100%) direction me move krega. ]   
+        * Animation-fill-mode : 'forwards/backwards/both/none'; 
+            [ forwards :- element animation pura complete hoga and last me jo (100%) ki css property hogi us state me hi rahega. ]
+            [ backwards :- element delay duration me hi starting (0%) ki css property pr rhega and (100%) complete hone pr apni original state me aa jayega. ]
+            [ both :- element backwards and forwards dono ki property ko rakhega. starting (0%) ki css property dikhegi and (100%) hone pr element 100% ki property pr stick kr jayega. (until next animation start (iteration-count 1) or refresh page) ]
+            [ none(by-default) :- element original state se start hoga then last state complete krke orginal state me aa jayga. ] 
+        * Animation : [animation-name] [duration] [delay] [iteration-count] [direction] [fill-mode];
+            */
+
+.container{
+    width : 400px;
+    height : 400px;
+    border : 2px solid black;
+    margin : auto;
+    position : relative;
+}
+.box{
+    width : 100px;
+    height : 100px;
+    background-color: black;
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    animation : box 5s 1s 2 alternate-reverse forwards; /* this is shorthand property. */
+    /* animation-name : box; 
+    animation-duration : 5s;
+    animation-delay : 1s;
+    animation-iteration-count : 3;
+    animation-direction : alternate;
+    animation-fill-mode : forwards; */
+}
+@keyframes box{
+    0%{
+        top : 0px;
+        left : 0px;
+        background : red;
+    }
+    15%{
+        top : 300px;
+        left : 00px;
+        background : yellow;
+    }
+    25%{
+        top : 300px;
+        left : 100px;
+        background : blue;
+    }
+    35%{
+        top : 00px;
+        left : 100px;
+        background : green;
+    }
+    45%{
+        top : 00px;
+        left : 200px;
+        background : pink;
+    }
+    55%{
+        top : 300px;
+        left : 200px;
+        background : brown;
+    }
+    65%{
+        top : 300px;
+        left : 300px;
+        background : orange;
+    }
+    100%{
+        top : 00px;
+        left : 300px;
+        background : purple;
+    }
+    
+}

@@ -19,6 +19,7 @@ body{
     width : 500px;
     height : 700px;
     margin : auto;
+    position : relative;
 }
 p{
     box-shadow : 0px 0px 10px 2px black;
@@ -36,7 +37,10 @@ p{
     height : 10px;
     border-radius : 100%;
     background-color: red;
-    transform: translate(3px,67px);
+    position : absolute;
+    top : 4px;
+    left : 3px;
+    /* transform: translate(3px,67px); */
     
     
 
@@ -46,45 +50,69 @@ p{
     height : 10px;
     border-radius : 100%;
     background-color: yellow;
-    transform: translate(15px,57px);
+    position : absolute;
+    top : 4px;
+    left : 15px;
+    /* transform: translate(15px,57px); */
 }
 .l3{
     width : 10px;
     height : 10px;
     border-radius : 100%;
     background-color: green;
-    transform: translate(27px,47px);
+    position : absolute;
+    top : 4px;
+    left : 27px;
+    /* transform: translate(27px,47px); */
 }
 
 .r1{
     width : 4px;
     height : 13px;
     background-color: white;
-    transform: translate(490px,40px);
+    border-radius : 1px;
+    position : absolute;
+    right : 3px;
+    top : 3px;
+    
+    /* transform: translate(490px,40px); */
 }
 .r2{
-    width : 3.8px;
+    width : 4px;
     height : 10px;
     background-color: white;
-    transform: translate(485px,30.2px);
+    border-radius : 1px;
+    position : absolute;
+    right : 8px;
+    top : 6px;
+    /* transform: translate(485px,30.2px); */
 }
 .r3{
-    width : 3.5px;
-    height : 8px;
+    width : 4px;
+    height : 7px;
     background-color: white;
-    transform: translate(480.5px,22.2px);
+    border-radius : 1px;
+    position : absolute;
+    right : 13px;
+    top : 9px;
+    /* transform: translate(480.5px,22.2px); */
 }
 .r4{
-    width : 3px;
+    width : 4px;
     height : 4px;
     background-color: white;
-    transform: translate(476.2px,18.4px);
+    border-radius : 1px;
+    position : absolute;
+    right : 18px;
+    top : 12px;
+    /* transform: translate(476.2px,18.4px); */
 }
 
 </style>
 </head>
 <body>
     <div class="main">
+        <div class="img">
         <!-- left side -->
         <div class="l1"></div>
         <div class="l2"></div>
@@ -95,7 +123,7 @@ p{
         <div class="r3"></div>
         <div class="r4"></div>
         <!-- main screen image -->
-        <div class="img"><img src="pic_01.webp" alt="rough" width="500px" height="200px"></div>
+        <img src="pic_01.webp" alt="rough" width="500px" height="200px"></div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eaque ut est illum saepe voluptate sint! Mollitia incidunt adipisci in soluta, beatae blanditiis commodi, quasi tempora nobis ducimus numquam minus.</p>
     </div>
 </body>
