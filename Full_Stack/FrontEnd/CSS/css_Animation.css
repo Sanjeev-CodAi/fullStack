@@ -21,14 +21,119 @@ Animation property syntax:-
             [ both :- element backwards and forwards dono ki property ko rakhega. starting (0%) ki css property dikhegi and (100%) hone pr element 100% ki property pr stick kr jayega. (until next animation start (iteration-count 1) or refresh page) ]
             [ none(by-default) :- element original state se start hoga then last state complete krke orginal state me aa jayga. ] 
         * Animation : [animation-name] [duration] [delay] [iteration-count] [direction] [fill-mode];
-            */
+        * Animation-time-function : 'linear/ease/ease-in/ease-out/ease-in-out'; [ye function time duration ko requirment ke according animation me divide krne me help krta hai.]
+            [ Linear :- animation ki speed equal/constant rehti hai all time. ] 
+            [ Ease(by-default) :- Starting slow -> fast Middle and End slow. ]
+            [ Ease-in :- slow start -> fast middle -> fast End ]
+            [ Ease-out :- fast start -> fast middle -> slow end .]
+            [ Ease-in-out :- slow start -> fast middle -> slow end. ye thoda sa ease ki tarah hai but usse jyada smoother,natural animation in-out effect deta hai. ]
+        */
 
+.anim-timing-func{
+    width : 800px;
+    height : 1000px;
+    /* border : 2px red solid; */
+    font-size : 20px;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-spacing : 10px;
+}
+.linear,.ease,.ease-in,.ease-out,.ease-in-out {
+    width : 600px;
+    height : 200px;
+    position : relative;
+    top : 5px;
+    left : 5px;
+    /* border : red 1px solid; */
+}
+/* Linear function moving element */
+.anim-func-box-linear{
+    height : 100px;
+    width : 100px;
+    background : rgb(255, 89, 194);
+    position : absolute;
+    top : 50px;
+    left : 0px;
+    animation-name : linear;
+    animation-duration : 4s;
+    animation-iteration-count : infinite;
+    /* animation-direction : alternate; */
+    animation-timing-function : linear;
+}
+@keyframes linear{
+    to {left : 500px;}
+}
+.anim-func-box-ease{
+    height : 100px;
+    width : 100px;
+    background : rgb(255, 158, 89);
+    position : absolute;
+    top : 50px;
+    left : 0px;
+    animation-name : ease;
+    animation-duration : 4s;
+    animation-iteration-count : infinite;
+    /* animation-direction : alternate; */
+    animation-timing-function : ease;
+}
+@keyframes ease{
+    to {left : 500px;}
+}
+.anim-func-box-ease-in{
+    height : 100px;
+    width : 100px;
+    background : rgb(255, 89, 194);
+    position : absolute;
+    top : 50px;
+    left : 0px;
+    animation-name : ease-in;
+    animation-duration : 4s;
+    animation-iteration-count : infinite;
+    /* animation-direction : alternate; */
+    animation-timing-function : ease-in;
+}
+@keyframes ease-in{
+    to {left : 500px;}
+}
+.anim-func-box-ease-out{
+    height : 100px;
+    width : 100px;
+    background : rgb(255, 89, 194);
+    position : absolute;
+    top : 50px;
+    left : 0px;
+    animation-name : ease-in-out;
+    animation-duration : 4s;
+    animation-iteration-count : infinite;
+    /* animation-direction : alternate; */
+    animation-timing-function : ease-out;
+}
+@keyframes ease-out{
+    to {left : 500px;}
+}
+.anim-func-box-ease-in-out{
+    height : 100px;
+    width : 100px;
+    background : rgb(255, 89, 194);
+    position : absolute;
+    top : 50px;
+    left : 0px;
+    animation-name : ease-out;
+    animation-duration : 4s;
+    animation-iteration-count : infinite;
+    /* animation-direction : alternate; */
+    animation-timing-function : ease-in-out;
+}
+@keyframes ease-in-out{
+    to {left : 500px;}
+}
 .container{
     width : 400px;
     height : 400px;
     border : 2px solid black;
-    margin : auto;
-    position : relative;
+    /* margin : auto; */
+    top : 10px;
+    right : 10px;
+    position : absolute;
 }
 .box{
     width : 100px;
@@ -37,7 +142,7 @@ Animation property syntax:-
     position : absolute;
     top : 0px;
     left : 0px;
-    animation : box 5s 1s 2 alternate-reverse forwards; /* this is shorthand property. */
+    animation : box 5s 0.5s infinite alternate-reverse forwards; /* this is shorthand property. */
     /* animation-name : box; 
     animation-duration : 5s;
     animation-delay : 1s;

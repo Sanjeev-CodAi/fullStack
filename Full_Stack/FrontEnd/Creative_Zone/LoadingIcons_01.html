@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        .main{
+            width : 210px;
+            height : 200px;
+            margin : auto;
+            /* border : 1px solid black; */
+            position : relative;
+        }
+        .load-text{
+            position : absolute;
+            left : 15%;
+            top : -35px;
+            letter-spacing: 2px;;
+            font-size : 25px;
+            display : flex;
+            font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .load-Box{
+            width : 200px;
+            height : 50px;
+            border : 5px solid rgb(28, 149, 255);
+            margin : auto;
+            margin-top : 100px;
+            position : relative;
+            border-radius : 5px;
+        }
+        .load-box-fill{
+            width : 200px;
+            height : 100%;
+            animation-name : box-fill;
+            animation-duration : 2s;
+            animation-iteration-count : infinite;
+            animation-direction : alternate;
+            border-radius : 0px;
+            background: linear-gradient(to right ,rgb(62, 144, 252) , rgb(8, 86, 253));
+        }
+        @keyframes box-fill{
+            from{
+                width : 0%;
+            }
+            to{
+                width : 100.10%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="load-Box">
+            <div class="load-text">
+                <div class="load-text-01">L</div>
+                <div class="load-text-02">o</div>
+                <div class="load-text-03">a</div>
+                <div class="load-text-04">d</div>
+                <div class="load-text-05">i</div>
+                <div class="load-text-06">n</div>
+                <div class="load-text-07">g</div>
+                <div class="load-text-08">.</div>
+                <div class="load-text-09">.</div>
+                <div class="load-text-10">.</div>
+            </div>
+            <div class="load-box-fill"></div>
+    </div>
+    </div>
+    
+</body>
+</html>
